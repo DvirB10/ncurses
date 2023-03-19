@@ -16503,7 +16503,7 @@ echo "${ECHO_T}$enable_stripping" >&6
 
 if test "$enable_stripping" = yes
 then
-	INSTALL_OPT_S="-s"
+	INSTALL_OPT_S="-s --strip-program ${ac_tool_prefix}strip"
 else
 	INSTALL_OPT_S=
 fi
